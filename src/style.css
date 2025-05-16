@@ -6,10 +6,13 @@
 }
 
 body {
-    width: 760px;
-    margin: 0 auto;
     background-color: #ccc;
     background-image: url(../img/abstract-textured-backgound.jpg);
+}
+
+.container {
+    width: 840px;
+    margin: 0 auto;
 }
 
 .header {
@@ -41,6 +44,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 210px;
+    width: 480px;
+    margin: 0 auto;
 }
 
 .links-btn {
@@ -57,4 +62,25 @@ body {
     background-color: transparent;
     color: #000;
     outline: 8px solid #000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 210px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .links-btn {
+    color: #000;
+    background-color: transparent;
+    outline: 8px solid #000;
+}
 }
